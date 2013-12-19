@@ -1,0 +1,4 @@
+[submodule "features"]
+	path = features
+	url = git@github.com:smithstone-oss/rss-features.git
+	branch = ios_iphone

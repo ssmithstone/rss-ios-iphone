@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321c6f7e38e87410b9c4745f /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ACB6B51831767A00AFAA25 /* UIKit.framework */; };
+		365faf042e1cc78c0b3ff059 /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = fe1d23e056cca5c591251df1 /* calabash.framework */; };
+		40dae72f1564480e01fc77fa /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8ACB6BA1831767A00AFAA25 /* InfoPlist.strings */; };
+		47611c5d3d3ec83902515d81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ACB6B31831767A00AFAA25 /* CoreGraphics.framework */; };
+		9155a95efab0bdfd0647c4ee /* SSOOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ACB6C11831767A00AFAA25 /* SSOOSAppDelegate.m */; };
+		a41b1b5093bf76ed271010e5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8ACB6C31831767A00AFAA25 /* Images.xcassets */; };
+		a4d9dce1d8ab534ed366fbbe /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4756b49993506a39c775ed1a /* CFNetwork.framework */; };
+		c1d2a4cf4f1e421b3a7ad3c7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ACB6BD1831767A00AFAA25 /* main.m */; };
+		c821c6bbbfedad17f72eb782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ACB6B11831767A00AFAA25 /* Foundation.framework */; };
 		F8ACB6B21831767A00AFAA25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ACB6B11831767A00AFAA25 /* Foundation.framework */; };
 		F8ACB6B41831767A00AFAA25 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ACB6B31831767A00AFAA25 /* CoreGraphics.framework */; };
 		F8ACB6B61831767A00AFAA25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ACB6B51831767A00AFAA25 /* UIKit.framework */; };
@@ -32,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21a0f3669f168b78ad1042b1 /* rss-ios-iphone-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rss-ios-iphone-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4756b49993506a39c775ed1a /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F8ACB6AE1831767A00AFAA25 /* rss-ios-iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rss-ios-iphone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8ACB6B11831767A00AFAA25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8ACB6B31831767A00AFAA25 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,9 +59,22 @@
 		F8ACB6D21831767B00AFAA25 /* rss-ios-iphoneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "rss-ios-iphoneTests-Info.plist"; sourceTree = "<group>"; };
 		F8ACB6D41831767B00AFAA25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8ACB6D61831767B00AFAA25 /* rss_ios_iphoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rss_ios_iphoneTests.m; sourceTree = "<group>"; };
+		fe1d23e056cca5c591251df1 /* calabash.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = calabash.framework; path = calabash.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		a9f889f41ea25dae86749ddb /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47611c5d3d3ec83902515d81 /* CoreGraphics.framework in Frameworks */,
+				321c6f7e38e87410b9c4745f /* UIKit.framework in Frameworks */,
+				c821c6bbbfedad17f72eb782 /* Foundation.framework in Frameworks */,
+				a4d9dce1d8ab534ed366fbbe /* CFNetwork.framework in Frameworks */,
+				365faf042e1cc78c0b3ff059 /* calabash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8ACB6AB1831767A00AFAA25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,8 +124,11 @@
 				F8ACB6B31831767A00AFAA25 /* CoreGraphics.framework */,
 				F8ACB6B51831767A00AFAA25 /* UIKit.framework */,
 				F8ACB6CA1831767B00AFAA25 /* XCTest.framework */,
+				4756b49993506a39c775ed1a /* CFNetwork.framework */,
+				fe1d23e056cca5c591251df1 /* calabash.framework */,
 			);
 			name = Frameworks;
+			path = "";
 			sourceTree = "<group>";
 		};
 		F8ACB6B71831767A00AFAA25 /* rss-ios-iphone */ = {
@@ -147,6 +174,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		d6faad198b408f0f28de5b4e /* rss-ios-iphone-cal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 677a99f6da9f35b54bff307b /* Build configuration list for PBXNativeTarget "rss-ios-iphone-cal" */;
+			buildPhases = (
+				dc6b8176365d70004871a25b /* Sources */,
+				a9f889f41ea25dae86749ddb /* Frameworks */,
+				2adf9c4d7baed2ca1b786c8d /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "rss-ios-iphone-cal";
+			productName = "rss-ios-iphone-cal";
+			productReference = 21a0f3669f168b78ad1042b1 /* rss-ios-iphone-cal.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F8ACB6AD1831767A00AFAA25 /* rss-ios-iphone */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8ACB6DA1831767B00AFAA25 /* Build configuration list for PBXNativeTarget "rss-ios-iphone" */;
@@ -193,7 +237,7 @@
 				ORGANIZATIONNAME = "Smithstone OSS";
 				TargetAttributes = {
 					F8ACB6C81831767B00AFAA25 = {
-						TestTargetID = F8ACB6AD1831767A00AFAA25 /* rss-ios-iphone */;
+						TestTargetID = F8ACB6AD1831767A00AFAA25;
 					};
 				};
 			};
@@ -211,11 +255,21 @@
 			targets = (
 				F8ACB6AD1831767A00AFAA25 /* rss-ios-iphone */,
 				F8ACB6C81831767B00AFAA25 /* rss-ios-iphoneTests */,
+				d6faad198b408f0f28de5b4e /* rss-ios-iphone-cal */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2adf9c4d7baed2ca1b786c8d /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40dae72f1564480e01fc77fa /* InfoPlist.strings in Resources */,
+				a41b1b5093bf76ed271010e5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8ACB6AC1831767A00AFAA25 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,6 +290,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		dc6b8176365d70004871a25b /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9155a95efab0bdfd0647c4ee /* SSOOSAppDelegate.m in Sources */,
+				c1d2a4cf4f1e421b3a7ad3c7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8ACB6AA1831767A00AFAA25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,6 +346,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		abd93218a9e76e9dd1baff6d /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rss-ios-iphone/rss-ios-iphone-Prefix.pch";
+				INFOPLIST_FILE = "rss-ios-iphone/rss-ios-iphone-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		e316973182fb4357a221c6b2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rss-ios-iphone/rss-ios-iphone-Prefix.pch";
+				INFOPLIST_FILE = "rss-ios-iphone/rss-ios-iphone-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
 		F8ACB6D81831767B00AFAA25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -318,7 +427,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos7.0;
 			};
 			name = Debug;
 		};
@@ -350,7 +459,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos7.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -426,6 +535,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		677a99f6da9f35b54bff307b /* Build configuration list for PBXNativeTarget "rss-ios-iphone-cal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				e316973182fb4357a221c6b2 /* Debug */,
+				abd93218a9e76e9dd1baff6d /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F8ACB6A91831767A00AFAA25 /* Build configuration list for PBXProject "rss-ios-iphone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
